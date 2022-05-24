@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="section section-worth">
+        <picture>
+          <source class="bg-picture" srcset="img/pngwing.avif" type="image/avif">
+          <source class="bg-picture" srcset="img/pngwing.webp" type="image/webp">
+          <img loading="lazy" src="img/pngwing.png" class="bg-picture" alt="Стив Джобс">
+        </picture>
+        <div class="container">
+          <div class="worth">
+            <div class="worth__item">
+              <h2 class="worth__title">Наши ценности</h2>
+              <p class="worth__desc">В MPSTATS нет <b>жесткой иерархической</b> структуры и бюрократии.</p>
+              <div class="worth-item">
+                <picture class="is-tablet is-desktop-hidden">
+                  <source class="worth-item__picture" srcset="img/pngwing.avif" type="image/avif">
+                  <source class="worth-item__picture" srcset="img/pngwing.webp" type="image/webp">
+                  <img loading="lazy" src="img/pngwing.png" class="worth-item__picture" alt="Стив Джобс">
+                </picture>
+                <div class="worth-content">
+                  <div class="worth-blockquote">
+                    <blockquote>
+                      Не имеет смысла нанимать толковых людей, а затем рассказать им, что делать; мы нанимаем умных людей, чтобы они могли рассказать нам, что делать
+                    </blockquote>
+                    <cite>Стив Джобс</cite>
+                  </div>
+                  <button class="worth-btn btn btn--white">Я могу подсказать!</button>
+                </div>
+              </div>
+
+            </div>
+            <div class="worth__item">
+              <ul class="worth-list">
+                <li class="worth-list__item">
+                  <svg class="worth-list__icon">
+                    <use xlink:href="img/sprite.svg#love"></use>
+                  </svg>
+                  <p>Любовь и уважение к людям</p>
+                </li>
+                <li class="worth-list__item">
+                  <svg class="worth-list__icon">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
+                  <p>Честность, порядочность</p>
+                </li>
+                <li class="worth-list__item">
+                  <svg class="worth-list__icon">
+                    <use xlink:href="img/sprite.svg#isk"></use>
+                  </svg>
+                  <p>Искренность</p>
+                </li>
+                <li class="worth-list__item">
+                  <svg class="worth-list__icon">
+                    <use xlink:href="img/sprite.svg#lid"></use>
+                  </svg>
+                  <p>Лидерство</p>
+                </li>
+                <li class="worth-list__item">
+                  <svg class="worth-list__icon">
+                    <use xlink:href="img/sprite.svg#pulse"></use>
+                  </svg>
+                  <p>Желание упрощать мир <span>и создавать продукт, доступный каждому</span></p>
+                </li>
+                <li class="worth-list__item">
+                  <svg class="worth-list__icon">
+                    <use xlink:href="img/sprite.svg#go"></use>
+                  </svg>
+                  <p>Дерзость и вызов</p>
+                </li>
+                <li class="worth-list__item">
+                  <svg class="worth-list__icon">
+                    <use xlink:href="img/sprite.svg#lol"></use>
+                  </svg>
+                  <p>Юмор</p>
+                </li>
+                <li class="worth-list__item">
+                  <svg class="worth-list__icon">
+                    <use xlink:href="img/sprite.svg#lamp"></use>
+                  </svg>
+                  <p>Любознательность идейность</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>

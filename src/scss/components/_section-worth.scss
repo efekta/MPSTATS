@@ -1,0 +1,347 @@
+.section-worth {
+  background: var(--dark);
+  padding: 28px 0;
+  position: relative;
+
+  @media(min-width: 1700px) {
+    min-height: 1000px;
+    padding: 72px 0;
+  }
+
+  &::before {
+    background: url("../img/svg/bg-lines.svg") no-repeat left bottom;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.worth {
+  position: relative;
+  z-index: 2;
+
+  @media(min-width: 1700px) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 49%);
+  }
+
+  &__item {
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    color: var(--light-color);
+    display: inline-block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+    padding: 0 22px 0 0;
+    position: relative;
+
+    @media(min-width: 768px) {
+      font-size: 33px;
+      line-height: 33px;
+      margin-bottom: 13px;
+    }
+
+    @media(min-width: 1700px) {
+      font-size: 55px;
+      line-height: 55px;
+      margin-bottom: 31px;
+    }
+
+    &::before {
+      background: url("../img/svg/heart.svg") no-repeat top;
+      content: "";
+      height: 12px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 12px;
+
+      @media(min-width: 1700px) {
+        height: 16px;
+        width: 18px;
+      }
+    }
+  }
+
+  &__desc {
+    color: var(--light-gray);
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    margin-bottom: 50px;
+
+    @media(min-width: 768px) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 27px;
+    }
+
+    @media(min-width: 1700px) {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 66px;
+    }
+  }
+
+  &-btn {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+
+    @media(min-width: 768px) {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 35px;
+      padding-left: 35px;
+      padding-right: 35px;
+      width: auto;
+    }
+
+    @media(min-width: 1700px) {
+      font-size: 21px;
+      line-height: 20px;
+      padding: 24px 40px;
+    }
+  }
+}
+
+.worth-item {
+  @media(min-width: 768px) {
+    column-gap: 40px;
+    display: flex;
+  }
+
+  &__picture {
+    @media(min-width: 768px) {
+      max-width: 100px;
+    }
+  }
+}
+
+.worth-blockquote {
+  margin-bottom: 22px;
+  padding: 0 35px;
+  position: relative;
+
+  @media(min-width: 1700px) {
+    padding-left: 87px;
+  }
+
+  &::before {
+    background: url("../img/svg/quote.svg") no-repeat top;
+    background-size: contain;
+    content: "";
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 18px;
+
+    @media(min-width: 768px) {
+      height: 16px;
+      width: 25px;
+    }
+
+    @media(min-width: 1700px) {
+      height: 67px;
+      width: 67px;
+    }
+  }
+
+  blockquote {
+    color: var(--light-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    margin-bottom: 11px;
+
+    @media(min-width: 768px) {
+      font-size: 20px;
+      line-height: 27px;
+      margin-bottom: 15px;
+    }
+
+    @media(min-width: 1700px) {
+      font-size: 30px;
+      line-height: 33px;
+      margin-bottom: 27px;
+    }
+  }
+
+  cite {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    color: var(--green);
+
+    @media(min-width: 768px) {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 20px;
+    }
+
+    @media(min-width: 1700px) {
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.worth-list {
+  column-count: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+
+  @media(min-width: 768px) {
+    column-count: 4;
+  }
+
+  @media(min-width: 1700px) {
+    column-count: 2;
+  }
+
+  &__item {
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    color: var(--light-color);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    min-height: 109px;
+    overflow: hidden;
+    padding: 45px 10px 20px 10px;
+    position: relative;
+    width: 48%;
+
+    @media(min-width: 768px) {
+      font-size: 14px;
+      line-height: 15px;
+      min-height: 140px;
+      padding: 65px 22px 22px 22px;
+      width: 24%;
+    }
+
+    @media(min-width: 1700px) {
+      padding: 85px 50px 30px 30px;
+      font-size: 20px;
+      line-height: 22px;
+      min-height: 175px;
+      width: 48%;
+    }
+
+    span {
+      color: #CCD4D9;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 17px;
+
+      @media(min-width: 768px) {
+        font-size: 14px;
+        line-height: 15px;
+        margin-top: 5px;
+      }
+
+      @media(min-width: 1700px) {
+        font-size: 13px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  &__item:nth-child(1),
+  &__item:nth-child(2),
+  &__item:nth-child(5),
+  &__item:nth-child(6) {
+    background: #303948;
+    border: 1px solid transparent;
+  }
+
+  &__item:nth-child(3),
+  &__item:nth-child(4),
+  &__item:nth-child(7),
+  &__item:nth-child(8) {
+    background: transparent;
+    border: 1px solid #435159;
+  }
+
+  @media(min-width: 768px) {
+    &__item:nth-child(1),
+    &__item:nth-child(2),
+    &__item:nth-child(3),
+    &__item:nth-child(4) {
+      background: #303948;
+      border: 1px solid transparent;
+    }
+  }
+
+  @media(min-width: 768px) {
+    &__item:nth-child(5),
+    &__item:nth-child(6),
+    &__item:nth-child(7),
+    &__item:nth-child(8) {
+      background: transparent;
+      border: 1px solid #435159;
+    }
+  }
+
+  @media(min-width: 1700px) {
+    &__item:nth-child(1),
+    &__item:nth-child(2),
+    &__item:nth-child(5),
+    &__item:nth-child(6) {
+      background: #303948;
+      border: 1px solid transparent;
+    }
+
+    &__item:nth-child(3),
+    &__item:nth-child(4),
+    &__item:nth-child(7),
+    &__item:nth-child(8) {
+      background: transparent;
+      border: 1px solid #435159;
+    }
+  }
+
+  &__icon {
+    height: 30px;
+    fill: var(--green);
+    position: absolute;
+    right: 10px;
+    min-height: 30px;
+    min-width: 30px;
+    top: 10px;
+    width: 30px;
+
+    @media(min-width: 768px) {
+      height: 35px;
+      width: 35px;
+    }
+
+    @media(min-width: 1700px) {
+      height: 64px;
+      width: 64px;
+    }
+  }
+}

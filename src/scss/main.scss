@@ -1,0 +1,12 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// UI Kit
+@import "./ui/btn";
+
+// подключения компонентов страницы
+@import "./components/section-worth";
+

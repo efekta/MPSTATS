@@ -1,0 +1,18 @@
+.btn {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn--white {
+  background: var(--light-color);
+  color: var(--black);
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
